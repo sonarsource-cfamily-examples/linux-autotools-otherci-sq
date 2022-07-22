@@ -13,6 +13,6 @@ export PATH=$HOME/.sonar/build-wrapper-linux-x86:$PATH
 
 autoreconf --install
 ./configure
-build-wrapper --out-dir $BW_OUTPUT make clean all
+build-wrapper-linux-x86-64 --out-dir $BW_OUTPUT make clean all
 
 sonar-scanner
