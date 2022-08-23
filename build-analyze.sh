@@ -13,7 +13,7 @@ export BUILD_WRAPPER_OUT_DIR="bw-output" # Directory where build-wrapper output 
 mkdir $HOME/.sonar
 
 # Download build-wrapper
-curl -sSLo $HOME/.sonar/build-wrapper-linux-x86.zip "${SONAR_SERVER_URL}/static/cpp/build-wrapper-linux-x86.zip"
+curl -sSLo $HOME/.sonar/build-wrapper-linux-x86.zip "${SONAR_HOST_URL}/static/cpp/build-wrapper-linux-x86.zip"
 unzip -o $HOME/.sonar/build-wrapper-linux-x86.zip -d $HOME/.sonar/
 export PATH=$HOME/.sonar/build-wrapper-linux-x86:$PATH
 
